@@ -7,6 +7,7 @@
 		<link href="https://hijoem.github.io/" rel="canonical">
 		<link type="text/css" rel="stylesheet" href="https://hijoem.github.io/style.css">
 		<script src="https://hijoem.github.io/main.js" crossorigin="anonymous"></script>
+		<script src="https://hijoem.github.io/workbox-c0edb8fa.js" crossorigin="anonymous"></script>
 		<meta name="og:title" property="og:title" content="hijoem">
 		<meta property="og:type" content="website" />
 		<meta property="og:site_name" content="IMDb" />
@@ -21,6 +22,13 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="https://hijoem.github.io/images/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="https://hijoem.github.io/images/favicon-16x16.png">
 		<link rel="manifest" href="https://hijoem.github.io/site.webmanifest">
+		<script>
+			if ('serviceWorker' in navigator) {
+				window.addEventListener('load', () => {
+				navigator.serviceWorker.register('https://hijoem.github.io/sw.js');
+			});
+		}
+		</script>
 	</head>
 	<body>
 		<p>All meta goes the body.</p>
