@@ -40,7 +40,7 @@ if (!self.define) {
 		}))
 	}
 }
-define("https://hijoem.github.io/sw.js", ["https://hijoem.github.io/workbox-c0edb8fa"], (function(e) {
+define("./sw.js", ["./workbox-c0edb8fa"], (function(e) {
 	"use strict";
 	self.addEventListener("message", e => {
 		e.data && "SKIP_WAITING" === e.data.type && self.skipWaiting()
