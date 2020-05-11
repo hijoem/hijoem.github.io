@@ -5,7 +5,6 @@
 		<meta charset="UTF-8">
 		<meta name="description" content="My personal static page.">
 		<link href="https://hijoem.github.io/" rel="canonical">
-		<link type="text/css" rel="stylesheet" href="https://hijoem.github.io/style.css">
 		<script src="https://hijoem.github.io/main.js" crossorigin="anonymous"></script>
 		<script src="https://hijoem.github.io/workbox-c0edb8fa.js" crossorigin="anonymous"></script>
 		<meta name="og:title" property="og:title" content="hijoem">
@@ -33,8 +32,68 @@
 			});
 		}
 		</script>
+		<link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+		<style type="text/css">
+		html, body {
+		background-color: #242423;
+		color: #ede7e3;
+		font-family: 'Nunito', sans-serif;
+		font-weight: 200;
+		height: 100vh;
+		margin: 0;
+		}
+		.full-height {
+		height: 100vh;
+		}
+		.flex-center {
+		align-items: center;
+		display: flex;
+		justify-content: center;
+		}
+		.position-ref {
+		position: relative;
+		}
+		.top-right {
+		position: absolute;
+		right: 10px;
+		top: 18px;
+		}
+		.content {
+		text-align: center;
+		}
+		.title {
+		font-size: 84px;
+		}
+		.links > a {
+		color: #ede7e3;
+		padding: 0 25px;
+		font-size: 13px;
+		font-weight: 600;
+		letter-spacing: .1rem;
+		text-decoration: none;
+		text-transform: uppercase;
+		}
+		.m-b-md {
+		margin-bottom: 30px;
+		}
+		</style>
 	</head>
 	<body>
-		<p>All meta goes the body.</p>
+		<div class="flex-center position-ref full-height">
+			<div class="top-right links">
+				<a href="https://bit.ly/hijoem4">Blog</a>
+			</div>
+			<div class="content">
+				<div class="title m-b-md">
+					HIJOEM
+				</div>
+				<div class="links">
+					<a href="https://cekmovie.netlify.app/">cekMovie - SPA JS ES6</a>
+					<a href="http://lookmovie.herokuapp.com/">LooKMovIE - LINE chatbot</a>
+					<a href="https://whycovid19.herokuapp.com/">WhyCovid19 - LINE chatbot</a>
+					<a href="https://github.com/hijoem?tab=repositories">GitHub</a>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
