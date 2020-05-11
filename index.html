@@ -5,13 +5,12 @@
 		<meta charset="UTF-8">
 		<meta name="description" content="My personal static page.">
 		<link href="https://hijoem.github.io/" rel="canonical">
-		<script src="https://hijoem.github.io/main.js" crossorigin="anonymous"></script>
-		<script src="https://hijoem.github.io/workbox-c0edb8fa.js" crossorigin="anonymous"></script>
+		<script src="./workbox-c0edb8fa.js" crossorigin="anonymous"></script>
 		<meta name="og:title" property="og:title" content="hijoem">
 		<meta name="theme-color" content="#0B165F" />
 		<meta property="og:type" content="website" />
 		<meta property="og:site_name" content="IMDb" />
-		<meta property="og:image" content="https://hijoem.github.io/profile.jpg" />
+		<meta property="og:image" content="./profile.jpg" />
 		<meta property="og:description" content="My personal static page." />
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -20,18 +19,10 @@
 		<meta name="keywords" content="Android, Website, Blogger, System, Frontend, Backend">
 		<meta name="author" content="Muhamad Joko Mulyono">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<base href="https://hijoem.github.io/" target="_blank">
-		<link rel="apple-touch-icon" sizes="180x180" href="https://hijoem.github.io/images/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="https://hijoem.github.io/images/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="https://hijoem.github.io/images/favicon-16x16.png">
-		<link rel="manifest" href="https://hijoem.github.io/site.webmanifest">
-		<script>
-			if ('serviceWorker' in navigator) {
-				window.addEventListener('load', () => {
-				navigator.serviceWorker.register('https://hijoem.github.io/sw.js');
-			});
-		}
-		</script>
+		<link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+		<link rel="manifest" href="./site.webmanifest">
 		<link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 		<style type="text/css">
 		html, body {
@@ -64,17 +55,30 @@
 		.title {
 		font-size: 84px;
 		}
+		.ls {
+		display: inline-grid;
+		}
 		.links > a {
 		color: #ede7e3;
 		padding: 0 25px;
 		font-size: 13px;
 		font-weight: 600;
+		line-height: 1.5rem;
 		letter-spacing: .1rem;
 		text-decoration: none;
 		text-transform: uppercase;
+		transition: transform .2s;
+		}
+		.links > a:hover {
+		transform: scale(1.1);
 		}
 		.m-b-md {
 		margin-bottom: 30px;
+		}
+		@media screen and (min-width: 792px) {
+		.ls {
+		display: block;
+		}
 		}
 		</style>
 	</head>
@@ -82,18 +86,105 @@
 		<div class="flex-center position-ref full-height">
 			<div class="top-right links">
 				<a href="https://bit.ly/hijoem4">Blog</a>
+				<a href="https://github.com/hijoem?tab=repositories">GitHub</a>
 			</div>
 			<div class="content">
 				<div class="title m-b-md">
-					HIJOEM
-				</div>
-				<div class="links">
-					<a href="https://cekmovie.netlify.app/">cekMovie - SPA JS ES6</a>
-					<a href="http://lookmovie.herokuapp.com/">LooKMovIE - LINE chatbot</a>
-					<a href="https://whycovid19.herokuapp.com/">WhyCovid19 - LINE chatbot</a>
-					<a href="https://github.com/hijoem?tab=repositories">GitHub</a>
-				</div>
-			</div>
-		</div>
-	</body>
-</html>
+					<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+						width="325px" height="100px" viewBox="0 0 325 100">
+						<style type="text/css">
+						<![CDATA[
+							@import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
+							text {
+								filter: url(#filter);
+								fill: white;
+							font-family: 'Share Tech Mono', sans-serif;
+							font-size: 100px;
+								-webkit-font-smoothing: antialiased;
+								-moz-osx-font-smoothing: grayscale;
+								}
+						]]>
+						</style>
+						<defs>
+						<filter id="filter">
+						<feFlood flood-color="#242423" result="#242423" />
+						<feFlood flood-color="#2E45DB" result="flood1" />
+						<feFlood flood-color="#0B165F" result="flood2" />
+						<feOffset in="SourceGraphic" dx="3" dy="0" result="off1a"/>
+						<feOffset in="SourceGraphic" dx="2" dy="0" result="off1b"/>
+						<feOffset in="SourceGraphic" dx="-3" dy="0" result="off2a"/>
+						<feOffset in="SourceGraphic" dx="-2" dy="0" result="off2b"/>
+						<feComposite in="flood1" in2="off1a" operator="in"  result="comp1" />
+						<feComposite in="flood2" in2="off2a" operator="in" result="comp2" />
+						<feMerge x="0" width="100%" result="merge1">
+						<feMergeNode in = "black" />
+						<feMergeNode in = "comp1" />
+						<feMergeNode in = "off1b" />
+						<animate
+							attributeName="y"
+							id = "y"
+							dur ="4s"
+							
+							values = '104px; 104px; 30px; 105px; 30px; 2px; 2px; 50px; 40px; 105px; 105px; 20px; 6ßpx; 40px; 104px; 40px; 70px; 10px; 30px; 104px; 102px'
+							keyTimes = '0; 0.362; 0.368; 0.421; 0.440; 0.477; 0.518; 0.564; 0.593; 0.613; 0.644; 0.693; 0.721; 0.736; 0.772; 0.818; 0.844; 0.894; 0.925; 0.939; 1'
+							repeatCount = "indefinite" />
+							
+							<animate attributeName="height"
+								id = "h"
+								dur ="4s"
+								
+								values = '10px; 0px; 10px; 30px; 50px; 0px; 10px; 0px; 0px; 0px; 10px; 50px; 40px; 0px; 0px; 0px; 40px; 30px; 10px; 0px; 50px'
+								keyTimes = '0; 0.362; 0.368; 0.421; 0.440; 0.477; 0.518; 0.564; 0.593; 0.613; 0.644; 0.693; 0.721; 0.736; 0.772; 0.818; 0.844; 0.894; 0.925; 0.939; 1'
+								repeatCount = "indefinite" />
+								</feMerge>
+								
+								<feMerge x="0" width="100%" y="60px" height="65px" result="merge2">
+								<feMergeNode in = "black" />
+								<feMergeNode in = "comp2" />
+								<feMergeNode in = "off2b" />
+								<animate attributeName="y"
+									id = "y"
+									dur ="4s"
+									values = '103px; 104px; 69px; 53px; 42px; 104px; 78px; 89px; 96px; 100px; 67px; 50px; 96px; 66px; 88px; 42px; 13px; 100px; 100px; 104px;'
+									keyTimes = '0; 0.055; 0.100; 0.125; 0.159; 0.182; 0.202; 0.236; 0.268; 0.326; 0.357; 0.400; 0.408; 0.461; 0.493; 0.513; 0.548; 0.577; 0.613; 1'
+									repeatCount = "indefinite" />
+									
+									<animate attributeName="height"
+										id = "h"
+										dur = "4s"
+										
+										values = '0px; 0px; 0px; 16px; 16px; 12px; 12px; 0px; 0px; 5px; 10px; 22px; 33px; 11px; 0px; 0px; 10px'
+										keyTimes = '0; 0.055; 0.100; 0.125; 0.159; 0.182; 0.202; 0.236; 0.268; 0.326; 0.357; 0.400; 0.408; 0.461; 0.493; 0.513;  1'
+										
+										repeatCount = "indefinite" />
+										</feMerge>
+										
+										<feMerge>
+										<feMergeNode in="SourceGraphic" />
+										<feMergeNode in="merge1" />
+										<feMergeNode in="merge2" />
+										</feMerge>
+										</filter>
+										</defs>
+										<g>
+											<text x="0" y="100">HIJOEM</text>
+										</g>
+									</svg>
+								</div>
+								<div class="links ls">
+									<a href="https://cekmovie.netlify.app/" target="_blank">cekMovie - SPA JS ES6</a>
+									<a href="http://lookmovie.herokuapp.com/" target="_blank">LooKMovIE - LINE chatbot</a>
+									<a href="https://whycovid19.herokuapp.com/" target="_blank">WhyCovid19 - LINE chatbot</a>
+								</div>
+							</div>
+						</div>
+						
+						<script>
+							if ('serviceWorker' in navigator) {
+								window.addEventListener('load', () => {
+								navigator.serviceWorker.register('./sw.js');
+							});
+						}
+						</script>
+					</body>
+				</html>

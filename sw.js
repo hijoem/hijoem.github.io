@@ -72,14 +72,8 @@ define("./sw.js", ["./workbox-c0edb8fa"], (function(e) {
 		url: "index.html",
 		revision: "01a5128f637e8d3c643696395741b261"
 	}, {
-		url: "main.js",
-		revision: "7a9076d6d94e62c13d641aa71f19ae8e"
-	}, {
 		url: "site.webmanifest",
 		revision: "471c9a5b05d72cc0a2fec7e6b899a834"
-	}, {
-		url: "style.css",
-		revision: "5bf1d9f15f8157c4999527b5897ae0c4"
 	}], {})
 }));
 //# sourceMappingURL=sw.js.map
