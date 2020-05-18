@@ -16,7 +16,7 @@
 		<meta name="apple-mobile-web-app-title" content="hijoem">
 		<meta name="robots" content="index, follow">
 		<meta name="keywords" content="hijoem, movie, line, github, Android, Website, Blogger, System, Frontend, Backend">
-		<meta name="google-site-verification" content="kjEbJ7bOOVdJTRIhftZgJMA51az3vSyvsrP8yLFDM5s" />
+		<meta name="google-site-verification" content="kjEbJ7bOOVdJTRIhftZgJMA51az3vSyvsrP8yLFDM5s"/>
 		<meta name="author" content="Muhamad Joko Mulyono">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
@@ -122,6 +122,19 @@
 		}
 		}
 		</style>
+		
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-36126508-3"></script>
+		<script>
+			if ('serviceWorker' in navigator) {
+				window.addEventListener('load', () => {
+				navigator.serviceWorker.register('./sw.js');
+			});
+			}
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-36126508-3');
+		</script>
 	</head>
 	<body>
 		<div class="flex-center position-ref full-height">
@@ -217,17 +230,5 @@
 							</main>
 						</div>
 						<div class="space"></div>
-						<script async src="https://www.googletagmanager.com/gtag/js?id=UA-36126508-3"></script>
-						<script>
-							if ('serviceWorker' in navigator) {
-								window.addEventListener('load', () => {
-								navigator.serviceWorker.register('./sw.js');
-							});
-							}
-							window.dataLayer = window.dataLayer || [];
-							function gtag(){dataLayer.push(arguments);}
-							gtag('js', new Date());
-							gtag('config', 'UA-36126508-3');
-						</script>
 					</body>
 				</html>
