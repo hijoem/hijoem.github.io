@@ -3,19 +3,20 @@
 	<head>
 		<title>hijoem</title>
 		<meta charset="UTF-8">
-		<meta name="description" content="My personal static page.">
+		<meta name="description" content="hijoem personal page">
 		<link href="https://hijoem.github.io/" rel="canonical">
 		<meta name="og:title" property="og:title" content="hijoem">
 		<meta name="theme-color" content="#242423" />
 		<meta property="og:type" content="website" />
-		<meta property="og:site_name" content="IMDb" />
+		<meta property="og:site_name" content="hijoem" />
 		<meta property="og:image" content="./profile.jpg" />
-		<meta property="og:description" content="My personal static page." />
+		<meta property="og:description" content="hijoem personal page" />
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 		<meta name="apple-mobile-web-app-title" content="hijoem">
 		<meta name="robots" content="index, follow">
-		<meta name="keywords" content="Android, Website, Blogger, System, Frontend, Backend">
+		<meta name="keywords" content="hijoem, movie, line, github, Android, Website, Blogger, System, Frontend, Backend">
+		<meta name="google-site-verification" content="kjEbJ7bOOVdJTRIhftZgJMA51az3vSyvsrP8yLFDM5s" />
 		<meta name="author" content="Muhamad Joko Mulyono">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
@@ -216,12 +217,17 @@
 							</main>
 						</div>
 						<div class="space"></div>
+						<script async src="https://www.googletagmanager.com/gtag/js?id=UA-36126508-3"></script>
 						<script>
 							if ('serviceWorker' in navigator) {
 								window.addEventListener('load', () => {
 								navigator.serviceWorker.register('./sw.js');
 							});
-						}
+							}
+							window.dataLayer = window.dataLayer || [];
+							function gtag(){dataLayer.push(arguments);}
+							gtag('js', new Date());
+							gtag('config', 'UA-36126508-3');
 						</script>
 					</body>
 				</html>
