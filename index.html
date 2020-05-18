@@ -22,13 +22,14 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
 		<link rel="manifest" href="./site.webmanifest">
-		<link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Nunito:200,600&display=swap" rel="stylesheet">
 		<script src="./workbox-c0edb8fa.js" crossorigin="anonymous"></script>
 		<base href="https://hijoem.github.io/" target="_blank">
 		<style type="text/css">
 		html, body {
 		background-color: #242423;
 		color: #ede7e3;
+		font-display: swap;
 		font-family: 'Nunito', sans-serif;
 		font-weight: 200;
 		height: 100%;
@@ -65,6 +66,7 @@
 		color: #ede7e3;
 		padding: 0 25px;
 		font-size: 13px;
+		margin-top: 10px;
 		font-weight: 600;
 		line-height: 1.5rem;
 		letter-spacing: .1rem;
@@ -122,21 +124,22 @@
 	</head>
 	<body>
 		<div class="flex-center position-ref full-height">
-			<div class="content">
-				<div class="top-right links">
-					<a href="https://bit.ly/hijoem4" target="_blank">Blog</a>
-					<a href="https://github.com/hijoem?tab=repositories">GitHub</a>
-				</div>
+			<main class="content">
+				<nav class="top-right links">
+					<a href="https://bit.ly/hijoem4" target="_blank" rel="noopener">Blog</a>
+					<a href="https://github.com/hijoem?tab=repositories" rel="noopener">GitHub</a>
+				</nav>
 				<div class="title m-b-md">
 					<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 						width="325px" height="100px" viewBox="0 0 325 100">
 						<style type="text/css">
 						<![CDATA[
-							@import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
+							@import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap);
 							text {
 								filter: url(#filter);
 								fill: white;
 							font-family: 'Share Tech Mono', sans-serif;
+							font-display: swap;
 							font-size: 100px;
 								-webkit-font-smoothing: antialiased;
 								-moz-osx-font-smoothing: grayscale;
@@ -162,7 +165,6 @@
 							attributeName="y"
 							id = "y"
 							dur ="4s"
-							
 							values = '104px; 104px; 30px; 105px; 30px; 2px; 2px; 50px; 40px; 105px; 105px; 20px; 6ßpx; 40px; 104px; 40px; 70px; 10px; 30px; 104px; 102px'
 							keyTimes = '0; 0.362; 0.368; 0.421; 0.440; 0.477; 0.518; 0.564; 0.593; 0.613; 0.644; 0.693; 0.721; 0.736; 0.772; 0.818; 0.844; 0.894; 0.925; 0.939; 1'
 							repeatCount = "indefinite" />
@@ -170,7 +172,6 @@
 							<animate attributeName="height"
 								id = "h"
 								dur ="4s"
-								
 								values = '10px; 0px; 10px; 30px; 50px; 0px; 10px; 0px; 0px; 0px; 10px; 50px; 40px; 0px; 0px; 0px; 40px; 30px; 10px; 0px; 50px'
 								keyTimes = '0; 0.362; 0.368; 0.421; 0.440; 0.477; 0.518; 0.564; 0.593; 0.613; 0.644; 0.693; 0.721; 0.736; 0.772; 0.818; 0.844; 0.894; 0.925; 0.939; 1'
 								repeatCount = "indefinite" />
@@ -190,10 +191,8 @@
 									<animate attributeName="height"
 										id = "h"
 										dur = "4s"
-										
 										values = '0px; 0px; 0px; 16px; 16px; 12px; 12px; 0px; 0px; 5px; 10px; 22px; 33px; 11px; 0px; 0px; 10px'
 										keyTimes = '0; 0.055; 0.100; 0.125; 0.159; 0.182; 0.202; 0.236; 0.268; 0.326; 0.357; 0.400; 0.408; 0.461; 0.493; 0.513;  1'
-										
 										repeatCount = "indefinite" />
 										</feMerge>
 										
@@ -210,14 +209,13 @@
 									</svg>
 								</div>
 								<div class="links ls">
-									<a href="https://cekmovie.netlify.app/" target="_blank">cekMovie - SPA JS ES6</a>
-									<a href="http://lookmovie.herokuapp.com/" target="_blank">LooKMovIE - LINE chatbot</a>
-									<a href="https://whycovid19.herokuapp.com/" target="_blank">WhyCovid19 - LINE chatbot</a>
+									<a href="https://cekmovie.netlify.app/" target="_blank" rel="noopener">cekMovie - SPA JS ES6</a>
+									<a href="https://lookmovie.herokuapp.com/" target="_blank" rel="noopener">LooKMovIE - LINE chatbot</a>
+									<a href="https://whycovid19.herokuapp.com/" target="_blank" rel="noopener">WhyCovid19 - LINE chatbot</a>
 								</div>
-							</div>
+							</main>
 						</div>
 						<div class="space"></div>
-						
 						<script>
 							if ('serviceWorker' in navigator) {
 								window.addEventListener('load', () => {
