@@ -1,236 +1,310 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns#">
-	<head>
-		<title>hijoem</title>
-		<meta charset="UTF-8">
-		<meta name="description" content="hijoem personal page">
-		<link href="https://hijoem.github.io/" rel="canonical">
-		<meta name="og:title" property="og:title" content="hijoem">
-		<meta name="theme-color" content="#242423" />
-		<meta property="og:type" content="website" />
-		<meta property="og:site_name" content="hijoem" />
-		<meta property="og:image" content="./profile.jpg" />
-		<meta property="og:description" content="hijoem personal page" />
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black">
-		<meta name="apple-mobile-web-app-title" content="hijoem">
-		<meta name="robots" content="index, follow">
-		<meta name="keywords" content="hijoem, movie, line, github, Android, Website, Blogger, System, Frontend, Backend">
-		<meta name="google-site-verification" content="kjEbJ7bOOVdJTRIhftZgJMA51az3vSyvsrP8yLFDM5s"/>
-		<meta name="author" content="Muhamad Joko Mulyono">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<base href="https://hijoem.github.io/" target="_blank">
-		<link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
-		<link rel="manifest" href="./site.webmanifest">
-		<link href="https://fonts.googleapis.com/css?family=Nunito:200,600&display=swap" rel="stylesheet">
-		<script src="./workbox-c0edb8fa.js" crossorigin="anonymous"></script>
-		<style type="text/css">
-		html, body {
-		background-color: #242423;
-		color: #ede7e3;
-		font-display: swap;
-		font-family: 'Nunito', sans-serif;
-		font-weight: 200;
-		height: 100%;
-		margin: 0;
-		overflow: hidden;
+
+<head>
+	<title>hijoem</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="hijoem personal page">
+	<link href="https://hijoem.github.io/" rel="canonical">
+	<meta name="og:title" property="og:title" content="hijoem">
+	<meta name="theme-color" content="#242423" />
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="hijoem" />
+	<meta property="og:image" content="./profile.jpg" />
+	<meta property="og:description" content="hijoem personal page" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="hijoem">
+	<meta name="robots" content="index, follow">
+	<meta name="keywords" content="hijoem, movie, line, github, Android, Website, Blogger, System, Frontend, Backend">
+	<meta name="google-site-verification" content="kjEbJ7bOOVdJTRIhftZgJMA51az3vSyvsrP8yLFDM5s" />
+	<meta name="author" content="Muhamad Joko Mulyono">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <base href="https://hijoem.github.io/" target="_blank"> -->
+	<link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+	<link rel="manifest" href="./site.webmanifest">
+	<link href="https://fonts.googleapis.com/css?family=Nunito:200,600&display=swap" rel="stylesheet">
+	<script src="./workbox-c0edb8fa.js" crossorigin="anonymous"></script>
+	<style type="text/css">
+		html,
+		body {
+			background-color: #242423;
+			color: #ede7e3;
+			font-display: swap;
+			font-family: 'Nunito', sans-serif;
+			font-weight: 200;
+			height: 100%;
+			margin: 0;
+			overflow: hidden;
 		}
+
 		.full-height {
-		height: 100%;
+			height: 100%;
 		}
+
 		.flex-center {
-		align-items: center;
-		display: flex;
-		justify-content: center;
+			align-items: center;
+			display: flex;
+			justify-content: center;
 		}
+
 		.position-ref {
-		position: relative;
+			position: relative;
 		}
+
 		.top-right {
-		position: absolute;
-		right: 10px;
-		top: 18px;
+			position: absolute;
+			right: 10px;
+			top: 18px;
 		}
+
 		.content {
-		z-index: 1;
-		text-align: center;
+			z-index: 1;
+			text-align: center;
 		}
+
 		.title {
-		font-size: 84px;
+			font-size: 84px;
 		}
+
 		.ls {
-		display: inline-grid;
+			display: inline-grid;
 		}
-		.links > a {
-		color: #ede7e3;
-		padding: 0 25px;
-		font-size: 13px;
-		margin-top: 10px;
-		font-weight: 600;
-		line-height: 1.5rem;
-		letter-spacing: .1rem;
-		text-decoration: none;
-		text-transform: uppercase;
-		transition: transform .2s;
+
+		.links>a,
+		.links>button {
+			color: #ede7e3;
+			padding: 0 25px;
+			font-size: 13px;
+			margin-top: 10px;
+			font-weight: 600;
+			line-height: 1.5rem;
+			letter-spacing: .1rem;
+			text-decoration: none;
+			text-transform: uppercase;
+			transition: transform .2s;
+			background-color: transparent;
+			border: none;
 		}
-		.links > a:hover {
-		transform: scale(1.1);
+
+		.links>a:hover,
+		.links>button:hover {
+			transformz: scale(1.1);
+			cursor: pointer;
 		}
+
 		.m-b-md {
-		margin-bottom: 30px;
-		}.space {
-		width: 400vw;
-		height: 400vh;
-		top: 50%;
-		left: 50%;
-		margin-top: -200vh;
-		margin-left: -200vw;
-		-webkit-animation: spin 240s linear infinite;
-		animation: spin 240s linear infinite;
-		background-size: 240px;
-		-webkit-backface-visibility: visible;
-		backface-visibility: visible;
-		background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8yIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI0MCAyNDAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI0MCAyNDAiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxyZWN0IHg9IjEwNiIgeT0iOTAiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIyIiBoZWlnaHQ9IjIiLz48cmVjdCB4PSI3NCIgeT0iNjMiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIyMyIgeT0iNjYiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSI1MCIgeT0iMTEwIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iNjMiIHk9IjEyOCIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjxyZWN0IHg9IjQ1IiB5PSIxNDkiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSI5MiIgeT0iMTUxIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iNTgiIHk9IjgiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIxNDciIHk9IjMzIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMiIgaGVpZ2h0PSIyIi8+PHJlY3QgeD0iOTEiIHk9IjQzIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iMTY5IiB5PSIyOSIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjxyZWN0IHg9IjE4MiIgeT0iMTkiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIxNjEiIHk9IjU5IiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iMTM4IiB5PSI5NSIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjxyZWN0IHg9IjE5OSIgeT0iNzEiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIzIiBoZWlnaHQ9IjMiLz48cmVjdCB4PSIyMTMiIHk9IjE1MyIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjIiIGhlaWdodD0iMiIvPjxyZWN0IHg9IjEyOCIgeT0iMTYzIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iMjA1IiB5PSIxNzQiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIxNTIiIHk9IjIwMCIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjxyZWN0IHg9IjUyIiB5PSIyMTEiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIyIiBoZWlnaHQ9IjIiLz48cmVjdCB5PSIxOTEiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIxMTAiIHk9IjE4NCIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjwvc3ZnPg==);
+			margin-bottom: 30px;
 		}
-		View SCSS Code
-		Resources
+
+		.space {
+			width: 400vw;
+			height: 400vh;
+			top: 50%;
+			left: 50%;
+			margin-top: -200vh;
+			margin-left: -200vw;
+			-webkit-animation: spin 240s linear infinite;
+			animation: spin 240s linear infinite;
+			background-size: 240px;
+			-webkit-backface-visibility: visible;
+			backface-visibility: visible;
+			background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8yIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI0MCAyNDAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI0MCAyNDAiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxyZWN0IHg9IjEwNiIgeT0iOTAiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIyIiBoZWlnaHQ9IjIiLz48cmVjdCB4PSI3NCIgeT0iNjMiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIyMyIgeT0iNjYiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSI1MCIgeT0iMTEwIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iNjMiIHk9IjEyOCIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjxyZWN0IHg9IjQ1IiB5PSIxNDkiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSI5MiIgeT0iMTUxIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iNTgiIHk9IjgiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIxNDciIHk9IjMzIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMiIgaGVpZ2h0PSIyIi8+PHJlY3QgeD0iOTEiIHk9IjQzIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iMTY5IiB5PSIyOSIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjxyZWN0IHg9IjE4MiIgeT0iMTkiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIxNjEiIHk9IjU5IiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iMTM4IiB5PSI5NSIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjxyZWN0IHg9IjE5OSIgeT0iNzEiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIzIiBoZWlnaHQ9IjMiLz48cmVjdCB4PSIyMTMiIHk9IjE1MyIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjIiIGhlaWdodD0iMiIvPjxyZWN0IHg9IjEyOCIgeT0iMTYzIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iMjA1IiB5PSIxNzQiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIxNTIiIHk9IjIwMCIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjxyZWN0IHg9IjUyIiB5PSIyMTEiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIyIiBoZWlnaHQ9IjIiLz48cmVjdCB5PSIxOTEiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIxMTAiIHk9IjE4NCIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjwvc3ZnPg==);
+		}
+
 		@-webkit-keyframes spin {
-		from {
-		-webkit-transform: rotate(0deg);
-		transform: rotate(0deg);
+			from {
+				-webkit-transform: rotate(0deg);
+				transform: rotate(0deg);
+			}
+
+			to {
+				-webkit-transform: rotate(360deg);
+				transform: rotate(360deg);
+			}
 		}
-		to {
-		-webkit-transform: rotate(360deg);
-		transform: rotate(360deg);
-		}
-		}
+
 		@keyframes spin {
-		from {
-		-webkit-transform: rotate(0deg);
-		transform: rotate(0deg);
+			from {
+				-webkit-transform: rotate(0deg);
+				transform: rotate(0deg);
+			}
+
+			to {
+				-webkit-transform: rotate(360deg);
+				transform: rotate(360deg);
+			}
 		}
-		to {
-		-webkit-transform: rotate(360deg);
-		transform: rotate(360deg);
-		}
-		}
+
 		@media screen and (min-width: 792px) {
-		.ls {
-		display: block;
+			.ls {
+				display: block;
+			}
 		}
+
+		.content-section {
+			opacity: 0;
+			transform: translateY(20px);
+			transition: opacity 0.4s ease, transform 0.4s ease;
+			display: none;
 		}
-		</style>
-		
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-36126508-3"></script>
-		<script>
-			if ('serviceWorker' in navigator) {
-				window.addEventListener('load', () => {
+
+		.content-section.active {
+			display: block;
+			opacity: 1;
+			transform: translateY(0);
+		}
+	</style>
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-36126508-3"></script>
+	<script>
+		if ('serviceWorker' in navigator) {
+			window.addEventListener('load', () => {
 				navigator.serviceWorker.register('./sw.js');
 			});
-			}
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-			gtag('config', 'UA-36126508-3');
-		</script>
-	</head>
-	<body>
-		<div class="flex-center position-ref full-height">
-			<main class="content">
-				<nav class="top-right links">
-					<a href="https://bit.ly/hijoem4" target="_blank" rel="noopener">Blog</a>
-					<a href="https://github.com/hijoem?tab=repositories" rel="noopener">GitHub</a>
-				</nav>
-				<div class="title m-b-md">
-					<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-						width="325px" height="100px" viewBox="0 0 325 100">
-						<style type="text/css">
+		}
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'UA-36126508-3');
+	</script>
+</head>
+
+<body>
+	<div class="flex-center position-ref full-height">
+		<main class="content">
+			<nav class="top-right links">
+				<button data-section="home">Home</button>
+				<button data-section="about">About</button>
+				<button data-section="services">Services</button>
+				<button data-section="contact">Contact</button>
+				<a href="https://bit.ly/hijoem4" target="_blank" rel="noopener">Blog</a>
+				<a href="https://github.com/hijoem?tab=repositories" rel="noopener">GitHub</a>
+			</nav>
+			<div class="title m-b-md">
+				<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg"
+					xmlns:xlink="http://www.w3.org/1999/xlink" width="325px" height="100px" viewBox="0 0 325 100">
+					<style type="text/css">
 						<![CDATA[
-							@import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap);
-							text {
-								filter: url(#filter);
-								fill: white;
+						@import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap);
+
+						text {
+							filter: url(#filter);
+							fill: white;
 							font-family: 'Share Tech Mono', sans-serif;
 							font-display: swap;
 							font-size: 100px;
-								-webkit-font-smoothing: antialiased;
-								-moz-osx-font-smoothing: grayscale;
-								}
+							-webkit-font-smoothing: antialiased;
+							-moz-osx-font-smoothing: grayscale;
+						}
 						]]>
-						</style>
-						<defs>
+					</style>
+					<defs>
 						<filter id="filter">
-						<feFlood flood-color="#242423" result="#242423" />
-						<feFlood flood-color="#2E45DB" result="flood1" />
-						<feFlood flood-color="#0B165F" result="flood2" />
-						<feOffset in="SourceGraphic" dx="3" dy="0" result="off1a"/>
-						<feOffset in="SourceGraphic" dx="2" dy="0" result="off1b"/>
-						<feOffset in="SourceGraphic" dx="-3" dy="0" result="off2a"/>
-						<feOffset in="SourceGraphic" dx="-2" dy="0" result="off2b"/>
-						<feComposite in="flood1" in2="off1a" operator="in"  result="comp1" />
-						<feComposite in="flood2" in2="off2a" operator="in" result="comp2" />
-						<feMerge x="0" width="100%" result="merge1">
-						<feMergeNode in = "black" />
-						<feMergeNode in = "comp1" />
-						<feMergeNode in = "off1b" />
-						<animate
-							attributeName="y"
-							id = "y"
-							dur ="4s"
-							values = '104px; 104px; 30px; 105px; 30px; 2px; 2px; 50px; 40px; 105px; 105px; 20px; 6ßpx; 40px; 104px; 40px; 70px; 10px; 30px; 104px; 102px'
-							keyTimes = '0; 0.362; 0.368; 0.421; 0.440; 0.477; 0.518; 0.564; 0.593; 0.613; 0.644; 0.693; 0.721; 0.736; 0.772; 0.818; 0.844; 0.894; 0.925; 0.939; 1'
-							repeatCount = "indefinite" />
-							
-							<animate attributeName="height"
-								id = "h"
-								dur ="4s"
-								values = '10px; 0px; 10px; 30px; 50px; 0px; 10px; 0px; 0px; 0px; 10px; 50px; 40px; 0px; 0px; 0px; 40px; 30px; 10px; 0px; 50px'
-								keyTimes = '0; 0.362; 0.368; 0.421; 0.440; 0.477; 0.518; 0.564; 0.593; 0.613; 0.644; 0.693; 0.721; 0.736; 0.772; 0.818; 0.844; 0.894; 0.925; 0.939; 1'
-								repeatCount = "indefinite" />
-								</feMerge>
-								
-								<feMerge x="0" width="100%" y="60px" height="65px" result="merge2">
-								<feMergeNode in = "black" />
-								<feMergeNode in = "comp2" />
-								<feMergeNode in = "off2b" />
-								<animate attributeName="y"
-									id = "y"
-									dur ="4s"
-									values = '103px; 104px; 69px; 53px; 42px; 104px; 78px; 89px; 96px; 100px; 67px; 50px; 96px; 66px; 88px; 42px; 13px; 100px; 100px; 104px;'
-									keyTimes = '0; 0.055; 0.100; 0.125; 0.159; 0.182; 0.202; 0.236; 0.268; 0.326; 0.357; 0.400; 0.408; 0.461; 0.493; 0.513; 0.548; 0.577; 0.613; 1'
-									repeatCount = "indefinite" />
-									
-									<animate attributeName="height"
-										id = "h"
-										dur = "4s"
-										values = '0px; 0px; 0px; 16px; 16px; 12px; 12px; 0px; 0px; 5px; 10px; 22px; 33px; 11px; 0px; 0px; 10px'
-										keyTimes = '0; 0.055; 0.100; 0.125; 0.159; 0.182; 0.202; 0.236; 0.268; 0.326; 0.357; 0.400; 0.408; 0.461; 0.493; 0.513;  1'
-										repeatCount = "indefinite" />
-										</feMerge>
-										
-										<feMerge>
-										<feMergeNode in="SourceGraphic" />
-										<feMergeNode in="merge1" />
-										<feMergeNode in="merge2" />
-										</feMerge>
-										</filter>
-										</defs>
-										<g>
-											<text x="0" y="100">HIJOEM</text>
-										</g>
-									</svg>
-								</div>
-								<div class="links ls">
-									<a href="https://indio.netlify.app/" target="_blank" rel="noopener">indio - listen radio</a>
-									<a href="https://ontv4.netlify.app/" target="_blank" rel="noopener">ontv4 - watch TV</a>
-									<a href="https://cekmovie.netlify.app/" target="_blank" rel="noopener">cekMovie - SPA JS ES6</a>
-									<a href="https://lookmovie.herokuapp.com/" target="_blank" rel="noopener">LooKMovIE - LINE chatbot</a>
-									<a href="https://whycovid19.herokuapp.com/" target="_blank" rel="noopener">WhyCovid19 - LINE chatbot</a>
-								</div>
-							</main>
-						</div>
-						<div class="space"></div>
-					</body>
-				</html>
+							<feFlood flood-color="#242423" result="#242423" />
+							<feFlood flood-color="#2E45DB" result="flood1" />
+							<feFlood flood-color="#0B165F" result="flood2" />
+							<feOffset in="SourceGraphic" dx="3" dy="0" result="off1a" />
+							<feOffset in="SourceGraphic" dx="2" dy="0" result="off1b" />
+							<feOffset in="SourceGraphic" dx="-3" dy="0" result="off2a" />
+							<feOffset in="SourceGraphic" dx="-2" dy="0" result="off2b" />
+							<feComposite in="flood1" in2="off1a" operator="in" result="comp1" />
+							<feComposite in="flood2" in2="off2a" operator="in" result="comp2" />
+							<feMerge x="0" width="100%" result="merge1">
+								<feMergeNode in="black" />
+								<feMergeNode in="comp1" />
+								<feMergeNode in="off1b" />
+								<animate attributeName="y" id="y" dur="4s"
+									values='104px; 104px; 30px; 105px; 30px; 2px; 2px; 50px; 40px; 105px; 105px; 20px; 6ßpx; 40px; 104px; 40px; 70px; 10px; 30px; 104px; 102px'
+									keyTimes='0; 0.362; 0.368; 0.421; 0.440; 0.477; 0.518; 0.564; 0.593; 0.613; 0.644; 0.693; 0.721; 0.736; 0.772; 0.818; 0.844; 0.894; 0.925; 0.939; 1'
+									repeatCount="indefinite" />
+
+								<animate attributeName="height" id="h" dur="4s"
+									values='10px; 0px; 10px; 30px; 50px; 0px; 10px; 0px; 0px; 0px; 10px; 50px; 40px; 0px; 0px; 0px; 40px; 30px; 10px; 0px; 50px'
+									keyTimes='0; 0.362; 0.368; 0.421; 0.440; 0.477; 0.518; 0.564; 0.593; 0.613; 0.644; 0.693; 0.721; 0.736; 0.772; 0.818; 0.844; 0.894; 0.925; 0.939; 1'
+									repeatCount="indefinite" />
+							</feMerge>
+
+							<feMerge x="0" width="100%" y="60px" height="65px" result="merge2">
+								<feMergeNode in="black" />
+								<feMergeNode in="comp2" />
+								<feMergeNode in="off2b" />
+								<animate attributeName="y" id="y" dur="4s"
+									values='103px; 104px; 69px; 53px; 42px; 104px; 78px; 89px; 96px; 100px; 67px; 50px; 96px; 66px; 88px; 42px; 13px; 100px; 100px; 104px;'
+									keyTimes='0; 0.055; 0.100; 0.125; 0.159; 0.182; 0.202; 0.236; 0.268; 0.326; 0.357; 0.400; 0.408; 0.461; 0.493; 0.513; 0.548; 0.577; 0.613; 1'
+									repeatCount="indefinite" />
+
+								<animate attributeName="height" id="h" dur="4s"
+									values='0px; 0px; 0px; 16px; 16px; 12px; 12px; 0px; 0px; 5px; 10px; 22px; 33px; 11px; 0px; 0px; 10px'
+									keyTimes='0; 0.055; 0.100; 0.125; 0.159; 0.182; 0.202; 0.236; 0.268; 0.326; 0.357; 0.400; 0.408; 0.461; 0.493; 0.513;  1'
+									repeatCount="indefinite" />
+							</feMerge>
+
+							<feMerge>
+								<feMergeNode in="SourceGraphic" />
+								<feMergeNode in="merge1" />
+								<feMergeNode in="merge2" />
+							</feMerge>
+						</filter>
+					</defs>
+					<g>
+						<text x="0" y="100">HIJOEM</text>
+					</g>
+				</svg>
+			</div>
+			<div class="links ls">
+				<a href="https://indio.netlify.app/" target="_blank" rel="noopener">indio - listen radio</a>
+				<a href="https://ontv4.netlify.app/" target="_blank" rel="noopener">ontv4 - watch TV</a>
+				<a href="https://cekmovie.netlify.app/" target="_blank" rel="noopener">cekMovie - SPA JS ES6</a>
+				<a href="https://lookmovie.herokuapp.com/" target="_blank" rel="noopener">LooKMovIE - LINE chatbot</a>
+				<a href="https://whycovid19.herokuapp.com/" target="_blank" rel="noopener">WhyCovid19 - LINE chatbot</a>
+			</div>
+
+			<section id="home" class="content-section active">
+				<h1>Home</h1>
+				<p>Welcome to the home page.</p>
+			</section>
+
+			<section id="about" class="content-section">
+				<h1>About</h1>
+				<p>About us content here.</p>
+			</section>
+
+			<section id="services" class="content-section">
+				<h1>Services</h1>
+				<p>Services we offer.</p>
+			</section>
+
+			<section id="contact" class="content-section">
+				<h1>Contact</h1>
+				<p>Contact details.</p>
+			</section>
+		</main>
+	</div>
+	<div class="space"></div>
+	<div>
+		<script>
+			document.querySelectorAll('nav button').forEach(button => {
+				button.addEventListener('click', () => {
+					const sectionToShow = button.getAttribute('data-section');
+
+					document.querySelectorAll('.content-section').forEach(section => {
+						section.classList.remove('active');
+						section.style.display = 'none';
+					});
+
+					const target = document.getElementById(sectionToShow);
+					target.style.display = 'block';
+
+					void target.offsetWidth;
+
+					target.classList.add('active');
+				});
+			});
+		</script>
+	</div>
+</body>
+
+</html>
