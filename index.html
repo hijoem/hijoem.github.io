@@ -1,310 +1,385 @@
 <!DOCTYPE html>
-<html lang="en" prefix="og: http://ogp.me/ns#">
+<html lang="en">
 
 <head>
-	<title>hijoem</title>
-	<meta charset="UTF-8">
-	<meta name="description" content="hijoem personal page">
-	<link href="https://hijoem.github.io/" rel="canonical">
-	<meta name="og:title" property="og:title" content="hijoem">
-	<meta name="theme-color" content="#242423" />
-	<meta property="og:type" content="website" />
-	<meta property="og:site_name" content="hijoem" />
-	<meta property="og:image" content="./profile.jpg" />
-	<meta property="og:description" content="hijoem personal page" />
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black">
-	<meta name="apple-mobile-web-app-title" content="hijoem">
-	<meta name="robots" content="index, follow">
-	<meta name="keywords" content="hijoem, movie, line, github, Android, Website, Blogger, System, Frontend, Backend">
-	<meta name="google-site-verification" content="kjEbJ7bOOVdJTRIhftZgJMA51az3vSyvsrP8yLFDM5s" />
-	<meta name="author" content="Muhamad Joko Mulyono">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- <base href="https://hijoem.github.io/" target="_blank"> -->
-	<link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
-	<link rel="manifest" href="./site.webmanifest">
-	<link href="https://fonts.googleapis.com/css?family=Nunito:200,600&display=swap" rel="stylesheet">
-	<script src="./workbox-c0edb8fa.js" crossorigin="anonymous"></script>
-	<style type="text/css">
-		html,
-		body {
-			background-color: #242423;
-			color: #ede7e3;
-			font-display: swap;
-			font-family: 'Nunito', sans-serif;
-			font-weight: 200;
-			height: 100%;
-			margin: 0;
-			overflow: hidden;
-		}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		.full-height {
-			height: 100%;
-		}
+    <title>hijoem | Full-Stack Engineer & System Architect</title>
 
-		.flex-center {
-			align-items: center;
-			display: flex;
-			justify-content: center;
-		}
+    <meta name="description"
+        content="Portfolio of Muhamad Joko Mulyono (hijoem), a Full-Stack Software Engineer in Jakarta specializing in system architecture, POS solutions, AI integrations, and infrastructure modernization.">
 
-		.position-ref {
-			position: relative;
-		}
+    <link href="https://hijoem.github.io/" rel="canonical">
 
-		.top-right {
-			position: absolute;
-			right: 10px;
-			top: 18px;
-		}
+    <meta property="og:title" content="Muhamad Joko Mulyono | Full-Stack Engineer">
+    <meta property="og:description"
+        content="Expert in system architecture, POS & hardware integration, and AI-driven automation workflows. Explore my solutions like SakuSheet and Wancik.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="hijoem Portfolio">
+    <meta property="og:image" content="./profile.jpg">
 
-		.content {
-			z-index: 1;
-			text-align: center;
-		}
+    <meta name="theme-color" content="#000000">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="hijoem">
+    <meta name="robots" content="index, follow">
 
-		.title {
-			font-size: 84px;
-		}
+    <meta name="keywords"
+        content="hijoem, Muhamad Joko Mulyono, Full-Stack Developer, System Architect, Jakarta, Spring Boot, Angular, Flutter, K3s, POS Development, Hardware Integration, Payment Gateway Integration, AI Telegram Bot, SakuSheet, Wancik">
 
-		.ls {
-			display: inline-grid;
-		}
+    <meta name="google-site-verification" content="kjEbJ7bOOVdJTRIhftZgJMA51az3vSyvsrP8yLFDM5s" />
+    <meta name="author" content="Muhamad Joko Mulyono">
 
-		.links>a,
-		.links>button {
-			color: #ede7e3;
-			padding: 0 25px;
-			font-size: 13px;
-			margin-top: 10px;
-			font-weight: 600;
-			line-height: 1.5rem;
-			letter-spacing: .1rem;
-			text-decoration: none;
-			text-transform: uppercase;
-			transition: transform .2s;
-			background-color: transparent;
-			border: none;
-		}
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <script src="./workbox-c0edb8fa.js" crossorigin="anonymous"></script>
 
-		.links>a:hover,
-		.links>button:hover {
-			transformz: scale(1.1);
-			cursor: pointer;
-		}
+    <style>
+        /* --- RESET & BASE --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+        }
 
-		.m-b-md {
-			margin-bottom: 30px;
-		}
+        body,
+        html {
+            background: #000;
+            color: #fff;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-		.space {
-			width: 400vw;
-			height: 400vh;
-			top: 50%;
-			left: 50%;
-			margin-top: -200vh;
-			margin-left: -200vw;
-			-webkit-animation: spin 240s linear infinite;
-			animation: spin 240s linear infinite;
-			background-size: 240px;
-			-webkit-backface-visibility: visible;
-			backface-visibility: visible;
-			background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8yIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI0MCAyNDAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI0MCAyNDAiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxyZWN0IHg9IjEwNiIgeT0iOTAiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIyIiBoZWlnaHQ9IjIiLz48cmVjdCB4PSI3NCIgeT0iNjMiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIyMyIgeT0iNjYiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSI1MCIgeT0iMTEwIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iNjMiIHk9IjEyOCIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjxyZWN0IHg9IjQ1IiB5PSIxNDkiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSI5MiIgeT0iMTUxIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iNTgiIHk9IjgiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIxNDciIHk9IjMzIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMiIgaGVpZ2h0PSIyIi8+PHJlY3QgeD0iOTEiIHk9IjQzIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iMTY5IiB5PSIyOSIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjxyZWN0IHg9IjE4MiIgeT0iMTkiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIxNjEiIHk9IjU5IiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iMTM4IiB5PSI5NSIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjxyZWN0IHg9IjE5OSIgeT0iNzEiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIzIiBoZWlnaHQ9IjMiLz48cmVjdCB4PSIyMTMiIHk9IjE1MyIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjIiIGhlaWdodD0iMiIvPjxyZWN0IHg9IjEyOCIgeT0iMTYzIiBmaWxsPSIjRkZGRkZGIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+PHJlY3QgeD0iMjA1IiB5PSIxNzQiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIxNTIiIHk9IjIwMCIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjxyZWN0IHg9IjUyIiB5PSIyMTEiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIyIiBoZWlnaHQ9IjIiLz48cmVjdCB5PSIxOTEiIGZpbGw9IiNGRkZGRkYiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiLz48cmVjdCB4PSIxMTAiIHk9IjE4NCIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjwvc3ZnPg==);
-		}
+        /* --- THE STARFIELD --- */
+        #starfield {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
 
-		@-webkit-keyframes spin {
-			from {
-				-webkit-transform: rotate(0deg);
-				transform: rotate(0deg);
-			}
+        /* --- LOGO ANIMATION --- */
+        .logo-container {
+            margin-top: 8vh;
+            margin-bottom: 20px;
+            cursor: pointer;
+            z-index: 10;
+        }
 
-			to {
-				-webkit-transform: rotate(360deg);
-				transform: rotate(360deg);
-			}
-		}
+        .hijoem-text {
+            font-size: clamp(2.5rem, 10vw, 5rem);
+            font-weight: 900;
+            letter-spacing: 10px;
+            color: #fff;
+            text-transform: uppercase;
+            text-shadow: 0 0 10px #2E45DB, 0 0 20px #0B165F;
+            animation: blueGlitch 5s infinite;
+        }
 
-		@keyframes spin {
-			from {
-				-webkit-transform: rotate(0deg);
-				transform: rotate(0deg);
-			}
+        @keyframes blueGlitch {
 
-			to {
-				-webkit-transform: rotate(360deg);
-				transform: rotate(360deg);
-			}
-		}
+            0%,
+            88%,
+            94%,
+            100% {
+                transform: skew(0);
+                text-shadow: 0 0 10px #2E45DB, 0 0 20px #0B165F;
+            }
 
-		@media screen and (min-width: 792px) {
-			.ls {
-				display: block;
-			}
-		}
+            90% {
+                transform: skew(3deg);
+                text-shadow: -3px 0 #2E45DB, 3px 0 #fff;
+            }
 
-		.content-section {
-			opacity: 0;
-			transform: translateY(20px);
-			transition: opacity 0.4s ease, transform 0.4s ease;
-			display: none;
-		}
+            92% {
+                transform: skew(-3deg);
+                color: #2E45DB;
+            }
+        }
 
-		.content-section.active {
-			display: block;
-			opacity: 1;
-			transform: translateY(0);
-		}
-	</style>
+        /* --- NAVIGATION --- */
+        nav {
+            margin-bottom: 30px;
+            z-index: 10;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
 
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-36126508-3"></script>
-	<script>
-		if ('serviceWorker' in navigator) {
-			window.addEventListener('load', () => {
-				navigator.serviceWorker.register('./sw.js');
-			});
-		}
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
-		gtag('config', 'UA-36126508-3');
-	</script>
+        nav button,
+        nav a {
+            background: rgba(0, 114, 255, 0.05);
+            border: 1px solid #2E45DB;
+            color: #2E45DB;
+            padding: 8px 16px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 0.75rem;
+            font-weight: bold;
+            border-radius: 3px;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+
+        nav button.active,
+        nav button:hover {
+            background: #2E45DB;
+            color: #000;
+            box-shadow: 0 0 15px #2E45DB;
+        }
+
+        /* --- CONTENT AREA --- */
+        .content-area {
+            width: 90%;
+            max-width: 600px;
+            background: rgba(0, 8, 20, 0.85);
+            border: 1px solid rgba(46, 69, 219, 0.4);
+            border-radius: 8px;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+            z-index: 5;
+            text-align: center;
+            box-shadow: inset 0 0 20px rgba(46, 69, 219, 0.1);
+        }
+
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        h2 {
+            color: #2E45DB;
+            margin-bottom: 15px;
+            letter-spacing: 3px;
+            font-size: 1.3rem;
+        }
+
+        p {
+            color: #ccc;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .blue {
+            color: #2E45DB;
+            font-weight: bold;
+        }
+
+        /* --- BOTTOM CONTACT BUTTON --- */
+        .contact-footer {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+        }
+
+        .contact-footer a {
+            color: #2E45DB;
+            text-decoration: none;
+            font-size: 0.65rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            opacity: 0.6;
+            transition: 0.3s;
+            border-bottom: 1px solid transparent;
+            padding-bottom: 2px;
+        }
+
+        .contact-footer a:hover {
+            opacity: 1;
+            border-bottom: 1px solid #2E45DB;
+            text-shadow: 0 0 5px #2E45DB;
+        }
+
+        @media (max-width: 480px) {
+            .logo-container {
+                margin-top: 5vh;
+            }
+
+            .content-area {
+                padding: 20px;
+            }
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-36126508-3"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js');
+            });
+        }
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-36126508-3');
+    </script>
 </head>
 
 <body>
-	<div class="flex-center position-ref full-height">
-		<main class="content">
-			<nav class="top-right links">
-				<button data-section="home">Home</button>
-				<button data-section="about">About</button>
-				<button data-section="services">Services</button>
-				<button data-section="contact">Contact</button>
-				<a href="https://bit.ly/hijoem4" target="_blank" rel="noopener">Blog</a>
-				<a href="https://github.com/hijoem?tab=repositories" rel="noopener">GitHub</a>
-			</nav>
-			<div class="title m-b-md">
-				<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg"
-					xmlns:xlink="http://www.w3.org/1999/xlink" width="325px" height="100px" viewBox="0 0 325 100">
-					<style type="text/css">
-						<![CDATA[
-						@import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap);
 
-						text {
-							filter: url(#filter);
-							fill: white;
-							font-family: 'Share Tech Mono', sans-serif;
-							font-display: swap;
-							font-size: 100px;
-							-webkit-font-smoothing: antialiased;
-							-moz-osx-font-smoothing: grayscale;
-						}
-						]]>
-					</style>
-					<defs>
-						<filter id="filter">
-							<feFlood flood-color="#242423" result="#242423" />
-							<feFlood flood-color="#2E45DB" result="flood1" />
-							<feFlood flood-color="#0B165F" result="flood2" />
-							<feOffset in="SourceGraphic" dx="3" dy="0" result="off1a" />
-							<feOffset in="SourceGraphic" dx="2" dy="0" result="off1b" />
-							<feOffset in="SourceGraphic" dx="-3" dy="0" result="off2a" />
-							<feOffset in="SourceGraphic" dx="-2" dy="0" result="off2b" />
-							<feComposite in="flood1" in2="off1a" operator="in" result="comp1" />
-							<feComposite in="flood2" in2="off2a" operator="in" result="comp2" />
-							<feMerge x="0" width="100%" result="merge1">
-								<feMergeNode in="black" />
-								<feMergeNode in="comp1" />
-								<feMergeNode in="off1b" />
-								<animate attributeName="y" id="y" dur="4s"
-									values='104px; 104px; 30px; 105px; 30px; 2px; 2px; 50px; 40px; 105px; 105px; 20px; 6ßpx; 40px; 104px; 40px; 70px; 10px; 30px; 104px; 102px'
-									keyTimes='0; 0.362; 0.368; 0.421; 0.440; 0.477; 0.518; 0.564; 0.593; 0.613; 0.644; 0.693; 0.721; 0.736; 0.772; 0.818; 0.844; 0.894; 0.925; 0.939; 1'
-									repeatCount="indefinite" />
+    <canvas id="starfield"></canvas>
 
-								<animate attributeName="height" id="h" dur="4s"
-									values='10px; 0px; 10px; 30px; 50px; 0px; 10px; 0px; 0px; 0px; 10px; 50px; 40px; 0px; 0px; 0px; 40px; 30px; 10px; 0px; 50px'
-									keyTimes='0; 0.362; 0.368; 0.421; 0.440; 0.477; 0.518; 0.564; 0.593; 0.613; 0.644; 0.693; 0.721; 0.736; 0.772; 0.818; 0.844; 0.894; 0.925; 0.939; 1'
-									repeatCount="indefinite" />
-							</feMerge>
+    <div class="logo-container" onclick="showTab('home')">
+        <div class="hijoem-text">HIJOEM</div>
+    </div>
 
-							<feMerge x="0" width="100%" y="60px" height="65px" result="merge2">
-								<feMergeNode in="black" />
-								<feMergeNode in="comp2" />
-								<feMergeNode in="off2b" />
-								<animate attributeName="y" id="y" dur="4s"
-									values='103px; 104px; 69px; 53px; 42px; 104px; 78px; 89px; 96px; 100px; 67px; 50px; 96px; 66px; 88px; 42px; 13px; 100px; 100px; 104px;'
-									keyTimes='0; 0.055; 0.100; 0.125; 0.159; 0.182; 0.202; 0.236; 0.268; 0.326; 0.357; 0.400; 0.408; 0.461; 0.493; 0.513; 0.548; 0.577; 0.613; 1'
-									repeatCount="indefinite" />
+    <nav>
+        <button onclick="showTab('home')" class="btn-nav active" id="btn-home">Home</button>
+        <button onclick="showTab('projects')" class="btn-nav" id="btn-projects">Projects</button>
+        <button onclick="showTab('about')" class="btn-nav" id="btn-about">About</button>
+        <a href="https://github.com/hijoem" target="_blank">GitHub</a>
+    </nav>
 
-								<animate attributeName="height" id="h" dur="4s"
-									values='0px; 0px; 0px; 16px; 16px; 12px; 12px; 0px; 0px; 5px; 10px; 22px; 33px; 11px; 0px; 0px; 10px'
-									keyTimes='0; 0.055; 0.100; 0.125; 0.159; 0.182; 0.202; 0.236; 0.268; 0.326; 0.357; 0.400; 0.408; 0.461; 0.493; 0.513;  1'
-									repeatCount="indefinite" />
-							</feMerge>
+    <div class="content-area">
+        <div id="home" class="tab-content active">
+            <h2>Architecture & Code</h2>
+            <p>Expert <span class="blue">Full-stack Software Engineer</span> and infrastructure specialist.</p>
+            <p>Designing scalable digital ecosystems and high-performance system architectures.</p>
+        </div>
 
-							<feMerge>
-								<feMergeNode in="SourceGraphic" />
-								<feMergeNode in="merge1" />
-								<feMergeNode in="merge2" />
-							</feMerge>
-						</filter>
-					</defs>
-					<g>
-						<text x="0" y="100">HIJOEM</text>
-					</g>
-				</svg>
-			</div>
-			<div class="links ls">
-				<a href="https://indio.netlify.app/" target="_blank" rel="noopener">indio - listen radio</a>
-				<a href="https://ontv4.netlify.app/" target="_blank" rel="noopener">ontv4 - watch TV</a>
-				<a href="https://cekmovie.netlify.app/" target="_blank" rel="noopener">cekMovie - SPA JS ES6</a>
-				<a href="https://lookmovie.herokuapp.com/" target="_blank" rel="noopener">LooKMovIE - LINE chatbot</a>
-				<a href="https://whycovid19.herokuapp.com/" target="_blank" rel="noopener">WhyCovid19 - LINE chatbot</a>
-			</div>
+        <div id="projects" class="tab-content">
+            <h2>Solutions</h2>
+            <div style="display: grid; gap: 8px; font-size: 0.95rem;">
+                <p>
+                    <a href="https://sakusheet.digiramu.my.id/" target="_blank" rel="noopener"
+                        class="blue">sakusheet</a> — AI-Powered Telegram Expense Tracker
+                </p>
+                <p>
+                    <a href="https://wancik.digiramu.my.id/" target="_blank" rel="noopener" class="blue">wancik</a> —
+                    Advanced Restaurant POS & Kitchen Display
+                </p>
+                <p>
+                    <a href="https://indio.netlify.app/" target="_blank" rel="noopener" class="blue">indio</a> — Digital
+                    Radio Interface
+                </p>
+                <p>
+                    <a href="https://ontv4.netlify.app/" target="_blank" rel="noopener" class="blue">ontv4</a> — Media
+                    Streaming Portal
+                </p>
+                <p>
+                    <a href="https://cekmovie.netlify.app/" target="_blank" rel="noopener" class="blue">cekMovie</a> —
+                    Modern Web Application
+                </p>
+            </div>
+        </div>
 
-			<section id="home" class="content-section active">
-				<h1>Home</h1>
-				<p>Welcome to the home page.</p>
-			</section>
+        <div id="about" class="tab-content">
+            <h2>Professional Profile</h2>
+            <p>Expertise in <span class="blue">System Architecture</span> and cross-platform development, specializing
+                in building robust enterprise solutions.</p>
 
-			<section id="about" class="content-section">
-				<h1>About</h1>
-				<p>About us content here.</p>
-			</section>
+            <div style="margin-top: 15px; border-top: 1px solid rgba(46, 69, 219, 0.3); padding-top: 15px;">
+                <p style="font-size: 0.8rem; margin-bottom: 8px; letter-spacing: 1px; color: #888;">TECHNICAL STACK</p>
+                <p style="font-size: 0.9rem; line-height: 1.5;">
+                    <span class="blue">Backend:</span> Spring Boot, Jakarta EE, Laravel, Node.js<br>
+                    <span class="blue">Frontend:</span> Angular, Vue.js, JavaScript (ES6+)<br>
+                    <span class="blue">Mobile:</span> Flutter, Android SDK<br>
+                    <span class="blue">Integrations:</span> Midtrans, Xendit, Tripay, Telegram/WA Bots, AI APIs<br>
+                    <span class="blue">Hardware:</span> Barcode Scanners, USB/Bluetooth Printers, Fingerprint, EDC<br>
+                    <span class="blue">Infrastructure:</span> Docker, K3s, PostgreSQL, Oracle
+                </p>
+            </div>
 
-			<section id="services" class="content-section">
-				<h1>Services</h1>
-				<p>Services we offer.</p>
-			</section>
+            <p style="margin-top: 15px; font-size: 0.9rem;">
+                Currently focused on <span class="blue">Infrastructure Modernization</span> and AI-driven automation
+                workflows in Jakarta.
+            </p>
+        </div>
+    </div>
 
-			<section id="contact" class="content-section">
-				<h1>Contact</h1>
-				<p>Contact details.</p>
-			</section>
-		</main>
-	</div>
-	<div class="space"></div>
-	<div>
-		<script>
-			document.querySelectorAll('nav button').forEach(button => {
-				button.addEventListener('click', () => {
-					const sectionToShow = button.getAttribute('data-section');
+    <div class="contact-footer">
+        <a href="https://www.instagram.com/hijoem" target="_blank">@hijoem</a>
+    </div>
 
-					document.querySelectorAll('.content-section').forEach(section => {
-						section.classList.remove('active');
-						section.style.display = 'none';
-					});
+    <script>
+        // Tab Handler
+        function showTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+            document.querySelectorAll('.btn-nav').forEach(b => b.classList.remove('active'));
+            document.getElementById(tabId).classList.add('active');
+            document.getElementById('btn-' + tabId).classList.add('active');
+        }
 
-					const target = document.getElementById(sectionToShow);
-					target.style.display = 'block';
+        // Starfield Engine
+        const canvas = document.getElementById('starfield');
+        const ctx = canvas.getContext('2d');
+        let stars = [];
+        let angle = 0;
 
-					void target.offsetWidth;
+        function resize() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            initStars();
+        }
 
-					target.classList.add('active');
-				});
-			});
-		</script>
-	</div>
+        function initStars() {
+            stars = [];
+            const count = window.innerWidth < 500 ? 150 : 300;
+            const spread = Math.max(canvas.width, canvas.height) * 1.5;
+            for (let i = 0; i < count; i++) {
+                stars.push({
+                    x: Math.random() * spread - spread / 2,
+                    y: Math.random() * spread - spread / 2,
+                    size: Math.random() * 1.5,
+                    opacity: Math.random(),
+                    blink: Math.random() * 0.01 + 0.005
+                });
+            }
+        }
+
+        function draw() {
+            ctx.fillStyle = "#000";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            ctx.save();
+            ctx.translate(canvas.width / 2, canvas.height / 2);
+            ctx.rotate(angle);
+
+            stars.forEach(s => {
+                s.opacity += s.blink;
+                if (s.opacity > 1 || s.opacity < 0.2) s.blink = -s.blink;
+                ctx.fillStyle = `rgba(180, 230, 255, ${s.opacity})`;
+                ctx.beginPath();
+                ctx.arc(s.x, s.y, s.size, 0, Math.PI * 2);
+                ctx.fill();
+            });
+
+            ctx.restore();
+            angle += 0.0004;
+            requestAnimationFrame(draw);
+        }
+
+        window.addEventListener('resize', resize);
+        resize();
+        draw();
+    </script>
 </body>
 
 </html>
